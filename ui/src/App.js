@@ -8,7 +8,7 @@ import bart from "./fx/The Full Postgame Interview Bart Scott Flies Over To Sal 
 import toxic from "./fx/Britney Spears - Toxic (Official HD Video).mp3"
 import "./App.css"
 
-const used_mp3z = [dynamite, greatSuccess, DJ, lol, bart].map((f) => f.split("/").slice(-1)[0])
+const used_mp3z = [dynamite, greatSuccess, DJ, lol, bart, toxic].map((f) => f.split("/").slice(-1)[0])
 //regex if needed: .replace(/\.[0-9a-z]+\.mp3/, ".mp3")
 
 const used = (file) => used_mp3z.includes(file.split("/").slice(-1)[0])
@@ -29,7 +29,6 @@ const fireSound = (effect, start, duration) => {
 }
 
 function App() {
-  // console.log(sounds)
   return (
     <div className="App">
       <button onClick={() => fireSound(dynamite)} className="absolute top-20 left-20">🧨boom goes the dynamite🧨</button>
@@ -41,7 +40,7 @@ function App() {
         <button onClick={() => fireSound(bart, 64.5, 2)}>💪can't wait!</button>
       </div>
 
-      <div className="absolute bottom-20 left-0 right-0 gap-4 flex">
+      <div className="absolute bottom-20 left-[50%] gap-4 flex">
         <button onClick={() => fireSound(toxic, 0, 3.5)}>☣toxic</button>
       </div>
 
