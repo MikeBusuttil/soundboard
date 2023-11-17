@@ -19,7 +19,6 @@ module.exports = {
   'Bubb Rubb and Lil Sis Tha whistles go WOOO ': require('./Bubb Rubb and Lil Sis Tha whistles go WOOO .mp3'),
   'IM RICK JAMES - AUDIO FROM JAYUZUMI.COM': require('./IM RICK JAMES - AUDIO FROM JAYUZUMI.COM.mp3'),
   'LET ME ASK YOU SOMETHING - AUDIO FROM JAYUZUMI.COM': require('./LET ME ASK YOU SOMETHING - AUDIO FROM JAYUZUMI.COM.mp3'),
-  'shia lebuff just do it': require('./shia lebuff just do it.mp3'),
   'YEAH YER YER YER (agree) - AUDIO FROM JAYUZUMI.COM': require('./YEAH YER YER YER (agree) - AUDIO FROM JAYUZUMI.COM.mp3'),
   'Popular Meme Sound Effects (For Video Editing)': require('./Popular Meme Sound Effects (For Video Editing).mp3'),
   'Zombie Kid Likes Turtles': require('./Zombie Kid Likes Turtles.mp3'),
