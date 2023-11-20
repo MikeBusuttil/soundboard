@@ -6,6 +6,8 @@ import lol from "./fx/El Risitas.mp3"
 import * as sounds from './fx'
 import bart from "./fx/The Full Postgame Interview Bart Scott Flies Over To Sal Paolantonio after Jets Win.mp3"
 import toxic from "./fx/Britney Spears - Toxic (Official HD Video).mp3"
+import zipItUp from "./fx//Dave Chappelle -zip it up and zip it out.mp3"
+import canada from "./fx/AS THEY SAY IN CANADA PEACE OUT - AUDIO FROM JAYUZUMI.COM.mp3"
 import "./App.css"
 
 const used_mp3z = [dynamite, greatSuccess, DJ, lol, bart, toxic].map((f) => f.split("/").slice(-1)[0])
@@ -56,6 +58,12 @@ function App() {
         <button key={name} onClick={() => fireSound(effect)} className="m-1 p-1 border text-sm border-black rounded">{name}</button>
       ))
       }
+      <br/><br/>
+      <div className="flex gap-2">
+        <button onClick={() => fireSound(canada)}>🍁</button>
+        <button onClick={() => fireSound(zipItUp, 29.5, 1.5)}>✌</button>
+        <button onClick={() => fireSound(zipItUp, 58, 3.12)}>🤐</button>
+      </div>
     </div>
   )
 }

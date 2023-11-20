@@ -39,6 +39,7 @@ module.exports = {
   'HA GAY - AUDIO FROM JAYUZUMI.COM': require('./HA GAY - AUDIO FROM JAYUZUMI.COM.mp3'),
   'DJ Airhorn Sound Effect': require('./DJ Airhorn Sound Effect.mp3'),
   'OH YEAH 2 - AUDIO FROM JAYUZUMI.COM': require('./OH YEAH 2 - AUDIO FROM JAYUZUMI.COM.mp3'),
+  'Dave Chappelle -zip it up and zip it out': require('./Dave Chappelle -zip it up and zip it out.mp3'),
   'Voicy_Borat Is nice': require('./Voicy_Borat Is nice.mp3'),
   'Best Cry Ever': require('./Best Cry Ever.mp3'),
   'Voicy_Borat Hello thank you to speak me': require('./Voicy_Borat Hello thank you to speak me.mp3'),
