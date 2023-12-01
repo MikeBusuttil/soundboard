@@ -11,7 +11,7 @@ def file_name(file):
     return file.replace("'", "\\'")
 
 for file in os.listdir(fx_foler):
-    if file.endswith(".mp3"):
+    if file.endswith(".mp3") or file.endswith(".ogg"):
         index_js.append(f"  '{prop(file)}': require('./{file_name(file)}'),")
 
 index_js.append("}\n")

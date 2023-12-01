@@ -3,14 +3,14 @@ import greatSuccess from "./fx/Borat Great Success.mp3"
 import DJ from "./fx/DJ Airhorn Sound Effect.mp3"
 import rickDJ from "./fx/DJ DROP THAT BEAT - AUDIO FROM JAYUZUMI.COM.mp3"
 import lol from "./fx/El Risitas.mp3"
-import * as sounds from './fx'
 import bart from "./fx/The Full Postgame Interview Bart Scott Flies Over To Sal Paolantonio after Jets Win.mp3"
 import toxic from "./fx/Britney Spears - Toxic (Official HD Video).mp3"
 import zipItUp from "./fx//Dave Chappelle -zip it up and zip it out.mp3"
 import canada from "./fx/AS THEY SAY IN CANADA PEACE OUT - AUDIO FROM JAYUZUMI.COM.mp3"
+import * as sounds from './fx'
 import "./App.css"
 
-const used_mp3z = [dynamite, greatSuccess, DJ, lol, bart, toxic].map((f) => f.split("/").slice(-1)[0])
+const used_mp3z = [dynamite, greatSuccess, DJ, rickDJ, lol, bart, toxic, zipItUp, canada].map((f) => f.split("/").slice(-1)[0])
 //regex if needed: .replace(/\.[0-9a-z]+\.mp3/, ".mp3")
 
 const used = (file) => used_mp3z.includes(file.split("/").slice(-1)[0])
@@ -54,6 +54,8 @@ function App() {
       <div className="h-28"/>
       {Object.entries(sounds)
         .filter(([_, effect]) => !used(effect))
+        // sort by name
+        .sort(([a], [b]) => a.localeCompare(b))
         .map(([name, effect]) => (
         <button key={name} onClick={() => fireSound(effect)} className="m-1 p-1 border text-sm border-black rounded">{name}</button>
       ))
