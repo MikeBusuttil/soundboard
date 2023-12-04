@@ -1,6 +1,7 @@
 module.exports = {
   'AS THEY SAY IN CANADA PEACE OUT - AUDIO FROM JAYUZUMI.COM': require('./AS THEY SAY IN CANADA PEACE OUT - AUDIO FROM JAYUZUMI.COM.mp3'),
   'OH YEAH 1 - AUDIO FROM JAYUZUMI.COM': require('./OH YEAH 1 - AUDIO FROM JAYUZUMI.COM.mp3'),
+  'Michael Jordan Stop It, Get Some Help': require('./Michael Jordan Stop It, Get Some Help.mp3'),
   'They ask you how you are and you just have to say that you re fine Sound Effect': require('./They ask you how you are and you just have to say that you re fine Sound Effect.mp3'),
   'Star Wars- The Imperial March (Darth Vader s Theme)': require('./Star Wars- The Imperial March (Darth Vader s Theme).mp3'),
   'AINT NOBODY GOT TIME FOR THAT - AUDIO FROM JAYUZUMI.COM': require('./AINT NOBODY GOT TIME FOR THAT - AUDIO FROM JAYUZUMI.COM.mp3'),

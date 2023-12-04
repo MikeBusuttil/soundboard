@@ -7,10 +7,11 @@ import bart from "./fx/The Full Postgame Interview Bart Scott Flies Over To Sal 
 import toxic from "./fx/Britney Spears - Toxic (Official HD Video).mp3"
 import zipItUp from "./fx//Dave Chappelle -zip it up and zip it out.mp3"
 import canada from "./fx/AS THEY SAY IN CANADA PEACE OUT - AUDIO FROM JAYUZUMI.COM.mp3"
+import stopIt from "./fx/Michael Jordan Stop It, Get Some Help.mp3"
 import * as sounds from './fx'
 import "./App.css"
 
-const used_mp3z = [dynamite, greatSuccess, DJ, rickDJ, lol, bart, toxic, zipItUp, canada].map((f) => f.split("/").slice(-1)[0])
+const used_mp3z = [dynamite, greatSuccess, DJ, rickDJ, lol, bart, toxic, zipItUp, canada, stopIt].map((f) => f.split("/").slice(-1)[0])
 //regex if needed: .replace(/\.[0-9a-z]+\.mp3/, ".mp3")
 
 const used = (file) => used_mp3z.includes(file.split("/").slice(-1)[0])
@@ -33,7 +34,8 @@ const fireSound = (effect, start, duration) => {
 function App() {
   return (
     <div className="App">
-      <button onClick={() => fireSound(dynamite)} className="absolute top-20 left-20">🧨boom goes the dynamite🧨</button>
+    <button onClick={() => fireSound(dynamite)} className="absolute top-20 left-20">🧨boom goes the dynamite🧨</button>
+      <button onClick={() => fireSound(stopIt)} className="absolute top-20 left-1/2">🛑stop it</button>
       <button onClick={() => fireSound(greatSuccess)} className="absolute top-20 right-20">👍great success👍</button>
       <div className="absolute bottom-20 left-20 gap-4 flex">
         <button onClick={() => fireSound(lol, 27, 10)}>🤣😹</button>
